@@ -23,6 +23,5 @@ use App\Containers\AppSection\Note\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('note-data/{id}', [Controller::class, 'findNoteById'])
-    ->name('api_note_find_note_by_id')
-    ->middleware(['auth:api']);
+    ->name('api_note_find_note_by_id');
 
