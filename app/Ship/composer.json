@@ -1,0 +1,18 @@
+{
+    "name": "apiato/ship",
+    "description": "Apiato Ship folder where are shared functionality resides",
+    "require": {
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "barryvdh/laravel-ide-helper": "^2.9.0",
+        "barryvdh/laravel-debugbar": "^3.5.5"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
+        ]
+    }
+}
