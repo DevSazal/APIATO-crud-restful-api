@@ -23,6 +23,5 @@ use App\Containers\AppSection\Note\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::post('note-data', [Controller::class, 'createNote'])
-    ->name('api_note_create_note')
-    ->middleware(['auth:api']);
+    ->name('api_note_create_note');
 

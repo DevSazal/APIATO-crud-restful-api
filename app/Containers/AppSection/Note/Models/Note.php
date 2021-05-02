@@ -7,7 +7,9 @@ use App\Ship\Parents\Models\Model;
 class Note extends Model
 {
     protected $fillable = [
-
+        'task',
+        'time',
+        'user_id'
     ];
 
     protected $attributes = [

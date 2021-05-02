@@ -12,7 +12,10 @@ class CreateNoteAction extends Action
     public function run(Request $request): Note
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            // add my request data column name here
+            'task',
+            'time',
+            'user_id'
         ]);
 
         return app(CreateNoteTask::class)->run($data);

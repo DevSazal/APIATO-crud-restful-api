@@ -12,6 +12,12 @@ class CreateNotesTable extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->id();
+            /**
+             *  start coding from here for APIATO
+             */
+            $table->longText('task');
+            $table->string('time');
+            $table->integer('user_id')->nullable();
 
             $table->timestamps();
             //$table->softDeletes();

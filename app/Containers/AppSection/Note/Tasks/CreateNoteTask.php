@@ -7,6 +7,8 @@ use App\Ship\Exceptions\CreateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;
 
+use App\Containers\AppSection\Note\Models\Note; // Add Model For Note
+
 class CreateNoteTask extends Task
 {
     protected NoteRepository $repository;

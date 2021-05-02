@@ -36,6 +36,9 @@ class CreateNoteRequest extends Request
     {
         return [
             // 'id' => 'required'
+            'task' => 'required|min:2',
+            'time' => 'required|min:1|max:30',
+            'user_id' => 'nullable|integer'
         ];
     }
 

@@ -26,6 +26,9 @@ class NoteTransformer extends Transformer
         $response = [
             'object' => $note->getResourceKey(),
             'id' => $note->getHashedKey(),
+            'task' => $note->task,
+            'time' => $note->time,
+            'user' => $note->user_id,
             'created_at' => $note->created_at,
             'updated_at' => $note->updated_at,
             'readable_created_at' => $note->created_at->diffForHumans(),
