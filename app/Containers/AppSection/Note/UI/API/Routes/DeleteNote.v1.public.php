@@ -23,6 +23,5 @@ use App\Containers\AppSection\Note\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::delete('note-data/{id}', [Controller::class, 'deleteNote'])
-    ->name('api_note_delete_note')
-    ->middleware(['auth:api']);
+    ->name('api_note_delete_note');
 
