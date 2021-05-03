@@ -23,6 +23,5 @@ use App\Containers\AppSection\Note\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::patch('note-data/{id}', [Controller::class, 'updateNote'])
-    ->name('api_note_update_note')
-    ->middleware(['auth:api']);
+    ->name('api_note_update_note');
 

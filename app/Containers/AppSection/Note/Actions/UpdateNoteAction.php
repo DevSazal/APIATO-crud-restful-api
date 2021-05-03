@@ -13,6 +13,9 @@ class UpdateNoteAction extends Action
     {
         $data = $request->sanitizeInput([
             // add your request data here
+            'task',
+            'time',
+            'user_id'
         ]);
 
         return app(UpdateNoteTask::class)->run($request->id, $data);

@@ -35,7 +35,10 @@ class UpdateNoteRequest extends Request
     public function rules(): array
     {
         return [
-            'id' => 'required'
+            'id' => 'required',
+            'task' => 'required|min:2',
+            'time' => 'required|min:1|max:30',
+            'user_id' => ''
         ];
     }
 

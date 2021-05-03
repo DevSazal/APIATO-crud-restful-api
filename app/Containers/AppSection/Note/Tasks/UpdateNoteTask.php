@@ -7,6 +7,8 @@ use App\Ship\Exceptions\UpdateResourceFailedException;
 use App\Ship\Parents\Tasks\Task;
 use Exception;
 
+use App\Containers\AppSection\Note\Models\Note; // Add Model For Note
+
 class UpdateNoteTask extends Task
 {
     protected NoteRepository $repository;
@@ -16,7 +18,7 @@ class UpdateNoteTask extends Task
         $this->repository = $repository;
     }
 
-    public function run($id, array $data)
+    public function run($id, array $data) : Note
     {
         try {
             return $this->repository->update($data, $id);
