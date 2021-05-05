@@ -23,5 +23,5 @@ use App\Containers\AppSection\Note\UI\API\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 Route::get('note-data', [Controller::class, 'getAllNotes'])
-    ->name('api_note_get_all_notes');
-
+    ->name('api_note_get_all_notes')
+    ->middleware('auth:api');

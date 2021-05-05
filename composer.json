@@ -37,6 +37,7 @@
         "apiato/documentation-generator-container": "^1.0.0",
         "apiato/social-auth-container": "^2.0",
         "apiato/welcome-container": "^1.0.0",
+        "barryvdh/laravel-ide-helper": "^2.10",
         "doctrine/dbal": "^3.0.0",
         "fideloper/proxy": "^4.4.1",
         "fruitcake/laravel-cors": "^1.0.6",

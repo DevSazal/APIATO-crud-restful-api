@@ -29,6 +29,8 @@ class Note extends Model
         'updated_at',
     ];
 
+
+
     /**
      * A resource key to be used in the serialized responses.
      */

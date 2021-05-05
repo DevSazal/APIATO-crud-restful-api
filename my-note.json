@@ -1,0 +1,16 @@
+{
+    "username":"admin@admin.com",
+    "password":"admin",
+    "client_id":1,
+    "client_secret":"tbfJhMmFUhuW2Ar0uZTnePlebnkDh2hBnnWEoXjN",
+    "grant_type":"password"
+
+}
+
+/*
+* Accept: application/json
+* Content-Type: application/json
+*/
+
+// add json params with body > raw
+// http://apiato.test/v1/oauth/token
